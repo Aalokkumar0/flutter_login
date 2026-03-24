@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 
-class homescreen extends StatelessWidget{
-  const homescreen({super.key});
+class Homescreen extends StatelessWidget{
+  const Homescreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Login homepage"),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text("kfdagjvfbdi")
+        ],
       ),
     );
   }
