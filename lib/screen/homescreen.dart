@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class Homescreen extends StatelessWidget{
@@ -13,7 +15,7 @@ class Homescreen extends StatelessWidget{
       body: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        
         children: [
             Center(
               child: Container(
@@ -23,6 +25,7 @@ class Homescreen extends StatelessWidget{
                 child: Center(child: Text("rows",style: TextStyle(color: Colors.white),)),
               ),
             ),
+            SizedBox(width: 20,),
             Center(
               child: Container(
                 height: 200,
@@ -31,6 +34,9 @@ class Homescreen extends StatelessWidget{
                 child: Center(child: Text("rows",style: TextStyle(color: Colors.white),)),
               ),
             ),
+
+             SizedBox(width: 20,),
+
             Center(
               child: Container(
                 height: 200,
@@ -39,6 +45,9 @@ class Homescreen extends StatelessWidget{
                 child: Center(child: Text("rows",style: TextStyle(color: Colors.white),)),
               ),
             ),
+
+             SizedBox(width: 20,),
+
             Center(
               child: Container(
                 height: 200,
@@ -47,6 +56,9 @@ class Homescreen extends StatelessWidget{
                 child: Center(child: Text("rows",style: TextStyle(color: Colors.white),)),
               ),
             ),
+
+             SizedBox(width: 20,),
+
             Center(
               child: Container(
                 height: 200,
@@ -55,6 +67,9 @@ class Homescreen extends StatelessWidget{
                 child: Center(child: Text("rows",style: TextStyle(color: Colors.white),)),
               ),
             ),
+
+             SizedBox(width: 20,),
+             
             Center(
               child: Container(
                 height: 200,
