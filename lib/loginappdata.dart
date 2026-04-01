@@ -1,3 +1,4 @@
+import 'package:flutte_login/widget/login_card.dart';
 import 'package:flutter/material.dart';
 
 class LoginApp extends StatelessWidget{
@@ -5,6 +6,10 @@ class LoginApp extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-   return MaterialApp();
+   return MaterialApp(
+    debugShowCheckedModeBanner: false,
+    title: "Login",
+    home: LoginCardScreen(),
+   );
   }
 }
