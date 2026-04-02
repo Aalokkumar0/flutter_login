@@ -28,12 +28,24 @@ class _LoginCardScreenState extends State<LoginCardScreen> {
           return LoginScreenCard();
         },
       ),
-
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: const Color.fromARGB(255, 40, 6, 72),
-        splashColor: Colors.red,
-        child: Icon(Icons.add,color:Colors.white,),
+        onPressed: () {
+          showModalBottomSheet(
+            context: context,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+            ),
+            builder: (context) {
+              return Container(
+                
+                color: Colors.black,
+                );
+            },
+          );
+        },
+        backgroundColor: Colors.brown,
+        hoverColor: Colors.red,
+        child: Icon(Icons.add, color: Colors.white),
       ),
     );
   }
