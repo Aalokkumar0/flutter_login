@@ -1,4 +1,5 @@
 import 'package:flutte_login/screen/login_screen_card.dart';
+import 'package:flutte_login/widget/buttom_entry_sheet.dart';
 import 'package:flutter/material.dart';
 
 class LoginCardScreen extends StatefulWidget {
@@ -32,19 +33,17 @@ class _LoginCardScreenState extends State<LoginCardScreen> {
         onPressed: () {
           showModalBottomSheet(
             context: context,
+            isScrollControlled: true,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
             ),
             builder: (context) {
-              return Container(
-                
-                color: Colors.black,
-                );
+              return ButtomEntrySheet() ;
             },
           );
         },
         backgroundColor: Colors.brown,
-        hoverColor: Colors.red,
+        splashColor: Colors.red,
         child: Icon(Icons.add, color: Colors.white),
       ),
     );
