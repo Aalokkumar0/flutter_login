@@ -28,6 +28,13 @@ class _LoginCardScreenState extends State<LoginCardScreen> {
           return LoginScreenCard();
         },
       ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: const Color.fromARGB(255, 40, 6, 72),
+        splashColor: Colors.red,
+        child: Icon(Icons.add,color:Colors.white,),
+      ),
     );
   }
 }
